@@ -3,32 +3,101 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Joyeux anniversaire Abdou</title>
+<title>Joyeux Anniversaire Abdou</title>
+
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(135deg,#f8c8dc,#f4a6c1,#e8b4d3);color:#fff;text-align:center;overflow-x:hidden}
-.container{padding:30px;max-width:800px;margin:auto}
-h1{font-size:3em;margin-top:20px}
-.card{background:rgba(255,255,255,0.15);padding:25px;border-radius:25px;backdrop-filter:blur(8px);box-shadow:0 10px 30px rgba(0,0,0,.2)}
-img{width:100%;max-width:420px;border-radius:20px;box-shadow:0 10px 20px rgba(0,0,0,.25)}
-p{font-size:1.25em;line-height:1.7}
-.heart{position:fixed;top:-20px;font-size:24px;animation:fall 8s linear infinite;color:#fff}
-@keyframes fall{to{transform:translateY(110vh);opacity:0}}
-button{padding:14px 24px;border:none;border-radius:30px;background:#fff;color:#e75480;font-weight:bold;font-size:1em;cursor:pointer}
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    text-align:center;
+    background:linear-gradient(135deg,#f8c8dc,#f4a6c1,#e8b4d3);
+    color:white;
+}
+
+.container{
+    padding:30px;
+}
+
+.card{
+    max-width:700px;
+    margin:auto;
+    background:rgba(255,255,255,0.15);
+    padding:25px;
+    border-radius:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+h1{
+    font-size:45px;
+}
+
+img{
+    width:300px;
+    border-radius:20px;
+    margin:20px 0;
+    box-shadow:0 8px 15px rgba(0,0,0,0.3);
+}
+
+p{
+    font-size:22px;
+    line-height:1.7;
+}
+
+.heart{
+    position:fixed;
+    top:-20px;
+    color:white;
+    animation:fall 8s linear infinite;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh);
+        opacity:0;
+    }
+}
 </style>
 </head>
+
 <body>
-<div class='container'>
-<div class='card'>
-<h1>Joyeux Anniversaire Abdou 🎉</h1>
-<img src='/mnt/data/8f55ff8c-6725-47be-a863-3f78711c72d1.jpeg' alt='Chaima et Abdou'>
-<p>Mon amour ❤️<br><br>En ce jour spécial, je veux te rappeler à quel point tu comptes pour moi. Merci pour ton sourire, ta présence, et tous les beaux moments qu'on partage ensemble.<br><br>32 ans aujourd'hui… et encore plus beau chaque année 😘<br><br>Je te souhaite tout le bonheur du monde. Je t'aime fort.<br><br>— Chaima</p>
-<button onclick="document.getElementById('music').play()">▶ Lancer la musique</button>
-<audio id='music' loop>
-<source src='https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3' type='audio/mpeg'>
-</audio>
-</div></div>
+
+<div class="container">
+<div class="card">
+
+<h1>Joyeux Anniversaire Abdou 🎂❤️</h1>
+
+<img src="photo.jpg" alt="Notre photo">
+
+<p>
+Mon amour ❤️ <br><br>
+
+Aujourd’hui tu fêtes tes <b>32 ans</b>,  
+et je veux te dire combien tu comptes pour moi. <br><br>
+
+Merci pour ton amour, ton sourire, ta présence et tous les beaux moments qu’on partage ensemble. <br><br>
+
+Je te souhaite tout le bonheur du monde, la santé, la réussite et beaucoup d’amour. <br><br>
+
+Je t’aime très fort. 💖 <br><br>
+
+— Chaima
+</p>
+
+</div>
+</div>
+
 <script>
-for(let i=0;i<25;i++){let h=document.createElement('div');h.className='heart';h.innerHTML='❤';h.style.left=Math.random()*100+'vw';h.style.animationDelay=(Math.random()*8)+'s';h.style.fontSize=(16+Math.random()*24)+'px';document.body.appendChild(h)}
+for(let i=0;i<30;i++){
+let heart=document.createElement("div");
+heart.className="heart";
+heart.innerHTML="❤";
+heart.style.left=Math.random()*100+"vw";
+heart.style.fontSize=(15+Math.random()*25)+"px";
+heart.style.animationDuration=(5+Math.random()*5)+"s";
+document.body.appendChild(heart);
+}
 </script>
+
 </body>
 </html>
